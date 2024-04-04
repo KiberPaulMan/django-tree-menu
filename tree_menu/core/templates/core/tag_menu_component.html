@@ -1,0 +1,15 @@
+{% load static %}
+<ol class="sublist">
+    {% for item in menu %}
+            <li>
+                {% if item.title == menu_title %}
+                    <a class="marked" href={{ item.url }}>{{ item.title }}</a>
+                {% else %}
+                    <a href={{ item.url }}>{{ item.title }}</a>
+                {% endif %}
+            </li>
+        {% if item.children %}
+            {% include "core/tag_menu_component.html" with menu=item.children %}
+        {% endif %}
+    {% endfor %}
+</ol>
