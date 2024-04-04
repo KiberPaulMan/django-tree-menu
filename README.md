@@ -5,7 +5,7 @@
    
 #### Установка зависимостей и применение миграций:
 3. pip install -r .\requirements.txt
-4. python manage.py migrate
+4. cd .\tree_menu\ | python manage.py migrate
    
 #### Создание суперпользователя:
 5. python manage.py createsuperuser
