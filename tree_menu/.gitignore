@@ -161,6 +161,3 @@ cython_debug/
 
 # static files
 static/
-
-#migritions files
-core/migrations/
