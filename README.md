@@ -19,7 +19,7 @@
 	
 #### Вставка template tag {% draw_menu "your menu item" %} в шаблон check_menu.html (tree_menu/core/templates/core/check_menu.html) 
 #### со своим параметром меню, например:
-8. <{% draw_menu "Фрукты" %}>
+8. {% draw_menu "Фрукты" %}
 	
 #### Проверка работы меню:
 9. <http://127.0.0.1:8000/check/>
